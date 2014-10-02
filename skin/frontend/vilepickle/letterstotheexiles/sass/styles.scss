@@ -1,0 +1,73 @@
+/***********************************************************************
+**
+** style.scss
+** Used to include all of your theme's .scss files.
+**
+************************************************************************/
+
+//Import frameworks
+@import "compass/css3";
+
+@import "breakpoint";
+@import "breakpoint-slicer";
+@import "theme/_variables.scss";
+@import "bootstrap";
+
+
+
+//Elements
+@import "theme/elements/_advanced-search.scss";
+@import "theme/elements/_breadcrumb.scss";
+@import "theme/elements/_captcha.scss";
+@import "theme/elements/_contact.scss";
+@import "theme/elements/_data-table.scss";
+@import "theme/elements/_info-box.scss";
+@import "theme/elements/_login.scss";
+@import "theme/elements/_map-popup.scss";
+@import "theme/elements/_messages.scss";
+@import "theme/elements/_pager.scss";
+@import "theme/elements/_remember-me.scss";
+@import "theme/elements/_sample-data.scss";
+@import "theme/elements/_search.scss";
+@import "theme/elements/_sitemap.scss";
+@import "theme/elements/_social.scss";
+@import "theme/elements/_sorter.scss";
+@import "theme/elements/_tags.scss";
+@import "theme/elements/_buttons.scss";
+@import "theme/elements/_misc.scss";
+@import "theme/elements/_stream-area.scss";
+
+//Pages
+@import "theme/pages/_account.scss";
+@import "theme/pages/_cart.scss";
+@import "theme/pages/_category.scss";
+@import "theme/pages/_checkout.scss";
+@import "theme/pages/_product.scss";
+@import "theme/pages/_review.scss";
+@import "theme/pages/_orders.scss";
+
+//Site Structure
+@import "theme/_forms.scss";
+@import "theme/_widgets.scss";
+@import "theme/_text.scss";
+@import "theme/_header.scss";
+@import "theme/_footer.scss";
+@import "theme/_layout.scss";
+
+//Sidebar
+@import "theme/sidebar/_sidebar.scss";
+@import "theme/sidebar/_block-account.scss";
+@import "theme/sidebar/_block-banner.scss";
+@import "theme/sidebar/_block-cart.scss";
+@import "theme/sidebar/_block-currency.scss";
+@import "theme/sidebar/_block-login.scss";
+@import "theme/sidebar/_block-poll.scss";
+@import "theme/sidebar/_block-related.scss";
+@import "theme/sidebar/_block-reorder.scss";
+@import "theme/sidebar/_block-tags.scss";
+@import "theme/sidebar/_block-wishlist.scss";
+@import "theme/sidebar/_block-layered-navigation.scss";
+
+@import "theme/_menu.scss";
+@import "theme/_menu-mobile.scss";
+@import "theme/_main.scss";

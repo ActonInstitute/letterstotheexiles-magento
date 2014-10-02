@@ -1,0 +1,115 @@
+#header{
+    position: relative;
+    //padding-top: 30px;
+
+}
+.header-content{
+    margin-top: 55px;
+    p{
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 45px;
+    }
+}
+.header-area{
+    padding-top: 36px;
+}
+#logo{
+    img{
+        @include breakpoint($desktop-below){
+            margin-top: 30px;
+        }
+        @include breakpoint($tablet-below){
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+}
+.logo{
+    @include breakpoint($tablet-below){
+        text-align: center;
+    }
+}
+
+.quick-access{
+    background:#444; 
+    color:#fff; 
+    padding:7px 13px; 
+    text-align:right;
+    .welcome-msg{
+        display:inline; 
+        margin:0; 
+        color:#fff;
+        a{
+            color:#ddd;
+        }
+    }
+    .form-language{
+        float:left;
+        label{
+            font-weight:bold; 
+            padding-right:5px; 
+            color:#fff; 
+            vertical-align:middle;
+        }
+        select{
+            padding:0;
+            &.flags{
+                option{
+                    background-position:4px 50%; 
+                    background-repeat:no-repeat; 
+                    padding-left:25px;
+                }
+            }
+        }
+    }
+    .links{
+        padding-left:8px;
+        display:inline;
+        li{
+            display:inline;
+            padding:0 4px 0 1px;
+            &.last{
+                a{
+                    padding:0; 
+                    background:none;
+                }
+            }
+        }
+        a{
+            color:#ddd;
+            padding:0 7px 0 0; 
+            background:url(../images/bkg_pipe1.gif) no-repeat 100% 50%;
+        }
+    }
+}
+.block-title-wrap {
+    background: url("../images/ltte/acorn_flow_block.png") no-repeat scroll 85% center rgba(0, 0, 0, 0);
+    margin: 4% auto 3%;
+    max-height: 85px;
+    overflow: hidden;
+    text-align: center;
+    @include breakpoint($big-phone-below){
+        background: transparent;
+    }
+    .block-title-inner{
+        display: inline-block;
+        overflow: hidden;
+        h3{
+            color: #403427;
+            float: left;
+            font-family: $font-family-headers;
+            font-size: 100px;
+            @include breakpoint($big-phone-below){
+                font-size: 70px;
+            }
+            line-height: 96px;
+            margin: 0;
+            text-transform: uppercase;
+            word-spacing: -5px;
+            a{
+                color: $brand-secondary;
+            }
+        }
+    }
+}

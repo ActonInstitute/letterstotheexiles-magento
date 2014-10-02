@@ -1,0 +1,19 @@
+/* Block: Currency Switcher */
+.block-currency { 
+	background:#f4f4f4; 
+	.block-title{
+		border:0; background:none; 
+		padding:7px 10px 2px; 
+		text-transform:none;
+		strong{
+			text-transform:none;
+		}
+	}
+	.block-content{
+		padding:0 10px 12px;
+		select{
+			width:100%; 
+			padding:0;
+		}
+	}
+}

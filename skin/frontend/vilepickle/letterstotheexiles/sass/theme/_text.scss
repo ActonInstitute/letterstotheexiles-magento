@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'traveling__typewriterregular';
+    src: url('../fonts/travelingtypewriter-webfont.eot');
+    src: url('../fonts/travelingtypewriter-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/travelingtypewriter-webfont.woff') format('woff'),
+    url('../fonts/travelingtypewriter-webfont.ttf') format('truetype'),
+    url('../fonts/travelingtypewriter-webfont.svg#traveling__typewriterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('../fonts/playfairdisplay-regular-webfont.eot');
+    src: url('../fonts/playfairdisplay-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/playfairdisplay-regular-webfont.woff') format('woff'),
+    url('../fonts/playfairdisplay-regular-webfont.ttf') format('truetype'),
+    url('../fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair_displaybold';
+    src: url('../fonts/playfairdisplay-bold-webfont.eot');
+    src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/playfairdisplay-bold-webfont.woff') format('woff'),
+    url('../fonts/playfairdisplay-bold-webfont.ttf') format('truetype'),
+    url('../fonts/playfairdisplay-bold-webfont.svg#playfair_displaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair_displayitalic';
+    src: url('../fonts/PlayfairDisplay-BlackItalic.ttf');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'populaire';
+    src: url('../fonts/populaire.otf');
+}
+@font-face {
+    font-family: 'TravelingTypewriter';
+    src: url('../fonts/TravelingTypewriter.ttf');
+}
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+    color: $fontColor;
+    line-height: 1.5;
+    font-family: $font-family-base;
+}
+
+hr {
+    border: 0 $gray-darker solid;
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+
+p{
+    line-height: 1.5;
+}
+
+/* Links */
+a{
+    color: $link-color;
+    text-decoration: none;
+    &:hover, &:focus{
+        color: $link-hover-color;
+        text-decoration: none;
+    }
+}
+
+label, input, button, select, textarea{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* `Headings
+----------------------------------------------------------------------------------------------------*/
+
+h1 {
+    font-size: 46px;
+    @include breakpoint($widescreen-below){
+        font-size: 38px;
+    }
+    @include breakpoint($tablet-below){
+        font-size: 35px;
+    }
+    font-family: $font-family-headers;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 42px;
+    @include breakpoint($widescreen-below){
+        font-size: 35px;
+    }
+    font-family: $font-family-headers;
+    line-height: 1.5;
+}
+h2.legend,
+h3.alternate{
+    font-size: 24px;
+    @include breakpoint($widescreen-below){
+        font-size: 20px;
+    }
+    font-family: $font-family-monospace;
+}
+h2.normal{
+    margin:0 0 20px;
+    font-size: 20px;
+    background: none;
+    font-weight: normal;
+    font-family: $font-family-base;
+}
+
+h3 {
+    font-size: 39px;
+    @include breakpoint($widescreen-below){
+        font-size: 35px;
+    }
+    @include breakpoint($tablet-below){
+        font-size: 22px;
+    }
+    font-family: $font-family-headers;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+h4 {
+    font-size: 30px;
+    @include breakpoint($widescreen-below){
+        font-size: 28px;
+    }
+    font-family: $font-family-headers;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+h5 {
+    font-size: 26px;
+    font-family: $font-family-headers;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 26px;
+    font-family: $font-family-headers;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+/* `Spacing
+----------------------------------------------------------------------------------------------------*/
+
+ol, ol li {
+    list-style: decimal;
+}
+
+.bodytext ul, #footer ul {
+    list-style: disc;
+    line-height: 1.5;
+}
+
+.bodytext ul li{
+    margin-left: 0;
+    list-style: none;
+}
+
+li {
+    margin-left: 20px;
+}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset,
+figure {
+    margin-bottom: 20px;
+}

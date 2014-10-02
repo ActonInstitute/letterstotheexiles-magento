@@ -1,0 +1,48 @@
+.contact-header{
+	font-family: $font-family-monospace;
+}
+.contact-header ul {
+    margin: 3% 0 5%;
+    padding: 0;
+    overflow: hidden;
+}
+.contact-header ul > li {
+    margin: 0 0 15px;
+    overflow: hidden;
+}
+.contact-header ul > li p {
+    color: #403427;
+    float: left;
+    font-weight: 600;
+    margin: 0 10px 0 0;
+    text-align: right;
+    width: 290px;
+    @include breakpoint($desktop-below){
+    	    display: block;
+    	    text-align: center;
+    	    float: none;
+    	    margin: 0;
+    	    width: 100%;
+    }
+}
+.contact-header ul > li p, .contact-header ul > li a {
+    font-family: $font-family-monospace;
+    font-size: 22px;
+    overflow: hidden;
+}
+.contact-header ul > li a {
+    color: #006888;
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: underline;
+    @include breakpoint($desktop-below){
+    	    display: block;
+    	    text-align: center;
+    }
+}
+.contact-header ul > li p, .contact-header ul > li a {
+    font-family: $font-family-monospace;
+    font-size: 22px;
+    overflow: hidden;
+}

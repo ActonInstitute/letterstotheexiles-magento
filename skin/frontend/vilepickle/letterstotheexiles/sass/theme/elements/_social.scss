@@ -1,0 +1,75 @@
+.social-title{
+    color: $brand-secondary;
+    font-family: $font-family-headers;
+    font-size: 50px;
+    margin: 0 0 3%;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul.social-media {
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+ul.social-media > li:first-child {
+    margin: 0;
+}
+ul.social-media > li {
+    float: left;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+}
+ul.social-media > li.fb a {
+    background-position: 0 2px;
+}
+ul.social-media > li.tw a {
+    background-position: -75px 2px;
+    @include breakpoint($tablet-below){
+    	background-position: -37px 2px;
+    }
+}
+ul.social-media > li.google a {
+    background-position: -148px 2px;
+    @include breakpoint($tablet-below){
+    	background-position: -74px 2px;
+    }
+}
+ul.social-media > li.instagram a {
+    background-position: -221px 2px;
+    @include breakpoint($tablet-below){
+    	background-position: -110px 2px;
+    }
+}
+ul.social-media > li.yt a {
+    background-position: -293px 2px;
+    @include breakpoint($tablet-below){
+    	background-position: -146px 2px;
+    }
+}
+ul.social-media > li.rss a {
+    background-position: -361px 2px;
+    @include breakpoint($tablet-below){
+    	background-position: -180px 2px;
+    }
+}
+ul.social-media > li a {
+    background: url("../images/ltte/social_media_sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 71px;
+    text-decoration: none;
+    text-indent: -9999px;
+    width: 68px;
+    &:hover{
+    	opacity: 0.8;
+    }
+    @include breakpoint($tablet-below){
+    	background: url("../images/ltte/social_media_sprite_mobile.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    	height: 38px;
+    	width: 34px;
+    }
+}
+.home-social-wrap {
+    overflow: hidden;
+    text-align: center;
+}

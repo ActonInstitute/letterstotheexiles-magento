@@ -1,0 +1,132 @@
+/* Form Elements */
+input,
+select,
+textarea,
+button { 
+	vertical-align:middle; 
+	color:#2f2f2f; 
+}
+
+select { 
+	option{
+		padding-right:10px; 
+	}
+	&.multiselect{
+		option{
+			border-bottom:1px solid #b6b6b6; 
+			padding:1px 5px;
+			&:last-child{
+				border-bottom:0;
+			}
+		}
+	}
+}
+
+textarea { 
+	overflow:auto; 
+	padding:2px; 
+}
+
+input{
+	&.qty{
+		width:2.5em !important;
+	}
+}
+
+p.control{
+	input.checkbox,
+	input.radio{
+		margin-right:6px;
+	}
+}
+
+ul.form-list{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+label{
+	font-weight:bold; 
+	position:relative; 
+	z-index:0;
+	&.required{
+		em{
+			float:right; 
+			font-style:normal; 
+			color:#eb340a; 
+			position:absolute; 
+			top:0; 
+			right:-7px;
+		}
+	}
+}
+
+.form-list-narrow{
+	li{
+		margin-bottom:0;
+		.input-box{
+			margin-bottom:15px;
+		}
+	}
+}
+
+.buttons-set{
+	clear:both; 
+	padding:20px 0 0; 
+	text-align:left;
+	p.required{
+		margin:0 0 10px;
+	}
+}
+
+.buttons-set-order{
+	margin:10px 0 0;
+	.please-wait{
+		padding:5px 7px 0 0;
+	}
+}
+
+.fieldset { 
+	margin:0 0 25px; 
+	.legend{
+		margin:0 -0 20px; 
+	}
+}
+
+.validation-advice{
+	clear:both; 
+	min-height:13px; 
+	margin:3px 0 0; 
+	padding-left:13px; 
+	background:url(../images/validation_advice_bg.gif) 2px 3px no-repeat; 
+	color:#eb340a;
+}
+
+.validation-failed{
+	border:1px solid #eb340a !important; 
+	background:#faebe7 !important;
+}
+
+p.required { 
+	color:#EB340A; 
+}
+
+.v-fix { 
+	float:left; 
+	.validation-advice{
+		display:block; 
+		width:12em; 
+		margin-right:-12em; 
+		position:relative;
+	}
+}
+
+.form-control{
+	margin-bottom: 15px;
+}
+
+.input-box{
+	select{
+		@extend .form-control;
+	}
+}

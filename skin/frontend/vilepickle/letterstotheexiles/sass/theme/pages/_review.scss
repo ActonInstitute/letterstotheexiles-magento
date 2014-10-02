@@ -1,0 +1,21 @@
+.review-product-list{
+	.product-view .product-img-box .product-image {
+		border-bottom: 0;
+		@include breakpoint($tablet-below){
+			margin-top: 30px;
+		}
+	}
+	.add-to-box,
+	.price-box,
+	.availability,
+	.no-rating{
+		display: none;
+	}
+}
+
+.review-list-row{
+	margin-bottom: 30px;
+}
+.product-img-box{
+	margin-bottom: 20px;
+}

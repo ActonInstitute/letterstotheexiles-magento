@@ -1,0 +1,20 @@
+.block-reorder{
+	input.checkbox{
+		float:left; 
+		margin:0 -20px 0 0;
+	}
+	.product-name{
+		margin-left:20px;
+	}
+	.validation-advice{
+		margin:3px 9px 7px;
+	}
+	ol{
+		margin-left: 0;
+		li{
+			list-style: none;
+			margin-left: 0;
+			line-height: 1.5;
+		}
+	}
+}

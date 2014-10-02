@@ -1,0 +1,16 @@
+.block-tags{
+	.block-content{
+		.tags-list{
+			border:0; background:none; padding:0;
+		}
+		li a{
+			color:#444;
+		}
+	}
+	.actions{
+		text-align:right;
+		a{
+			float:none;
+		}
+	}
+}

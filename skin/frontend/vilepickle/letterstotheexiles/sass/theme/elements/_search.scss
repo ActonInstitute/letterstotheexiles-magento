@@ -1,0 +1,86 @@
+.top-bar{
+    form{
+        margin: 0;
+    }
+    #custom-search-blocks-form-1 {
+
+    }
+}
+
+.top-bar{
+    display: inline;
+    float: right;
+    @include breakpoint($tablet-below){
+        display: inline-block;
+        float: none;
+    }
+    @include breakpoint($phone-below){
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        #custom-search-blocks-form-1 input{
+            margin: 0;
+        }
+    }
+}
+
+.top-bar{
+    .searchautocomplete{
+        @include breakpoint($tablet-below){
+            float: none;
+        }
+        .nav{
+            border: 0;
+            height: auto;
+            width: auto;
+            float: none;
+            padding: 0;
+            margin: 0;
+            .nav-input{
+                margin: 0;
+                padding: 0 !important;
+                border: 0;
+                input{
+                    background-color: #f4f4f4;
+                    @include border-radius(5px);
+                    border: none;
+                    width: 210px;
+                    font-size: 24px;
+                    @include breakpoint($desktop-below){
+                        font-size: 18px;
+                        width: 150px;
+                    }
+                    color: #cccccc;
+                    padding: 0 0 0 10px;
+
+                    font-family: $font-family-headers;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    line-height: 1;
+                    height: 30px;
+                    margin-bottom: 0;
+                    margin-top: 3px;
+                    @include breakpoint($tablet-below){
+                        margin-right: 0;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .nav-submit-button,
+    .nav-search-in{
+        display: none;
+    }
+        label{
+            display: none;
+        }
+        .form-actions{
+            padding: 0;
+            margin: 0;
+        }
+        .form-type-textfield{
+            margin: 0;
+        }
+
+}

@@ -1,0 +1,48 @@
+.captcha-note   { 
+	clear:left; 
+	padding-top:5px; 
+}
+
+.captcha-image { 
+	float:left; 
+	display:inline; 
+	margin:0; 
+	position:relative; 
+	width:258px; 
+	.captcha-img{
+		border:1px solid #b6b6b6; 
+		vertical-align:bottom; 
+		width:100%;
+	}
+}
+
+.registered-users {
+	.captcha-image { 
+		margin:0; 
+	}
+}
+
+.captcha-reload { 
+	cursor:pointer; 
+	position:absolute; 
+	top:2px; 
+	right:2px; 
+	&.refreshing{
+		animation:rotate 1.5s infinite linear; 
+		-webkit-animation:rotate 1.5s infinite linear; 
+		-moz-animation:rotate 1.5s infinite linear;
+	}
+}
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform:rotate(0); }
+    0% { -webkit-transform:rotate(-360deg); }
+}
+@-moz-keyframes rotate {
+    0% { -moz-transform:rotate(0); }
+    0% { -moz-transform:rotate(-360deg); }
+}
+@keyframes rotate {
+    0% { transform:rotate(0); }
+    0% { transform:rotate(-360deg); }
+}

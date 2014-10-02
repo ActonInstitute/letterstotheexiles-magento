@@ -1,0 +1,36 @@
+.block-account{
+	.block-title{
+		border:0; 
+		background:#666;
+		strong{
+			color:#fff;
+		}
+	}
+	.block-content{
+		ul{
+			margin-left: 0;
+		}
+		li{
+			a{
+				display:block; 
+				border-bottom:1px solid #ddd; 
+				padding:3px 0; 
+				color:#5f5d5c; 
+				text-decoration:none !important;
+				&:hover{
+					color:#444; 
+				}
+			}
+			&.last a{
+				border-bottom:0;
+			}
+			&.current{
+				border-bottom:1px solid #ddd; 
+				padding:3px 0;
+				&.last{
+					border-bottom:0;
+				}
+			}
+		}
+	}
+}

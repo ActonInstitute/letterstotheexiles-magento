@@ -1,0 +1,85 @@
+.footer-bg {
+    background-size: 100% auto;
+    overflow: hidden;
+    .footer-wrap{
+        margin: 50px 0 0;
+        overflow: hidden;
+        padding: 35px 0 0;
+        position: relative;
+        .footer-acorn{
+            background: url("../images/ltte/mobile_acorn.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+            height: 70px;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        .footer.flow{
+            background: url("../images/ltte/footer_bg_new.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+            margin: 0;
+            overflow: hidden;
+            padding: 88px 0 0;
+            text-align: center;
+            .footer-list-wrap{
+                overflow: hidden;
+            }
+            ul.main-footer-menu {
+                margin: 0 0 10%;
+                padding: 0;
+                display: inline-block;
+                overflow: hidden;
+                font-family: $font-family-serif;
+            }
+            ul.main-footer-menu > li {
+                float: left;
+                overflow: hidden;
+                margin: 0;
+                list-style: none;
+                @include breakpoint($widescreen-below){
+                    float: none;
+                    margin-bottom: 20px;
+                }
+            }
+            ul.main-footer-menu > li a {
+                color: #e3e0da;
+                font-size: 24px;
+                line-height: normal;
+                padding: 0 15px;
+                text-decoration: none;
+                text-transform: uppercase;
+
+            }
+            ul.main-footer-menu > li:first-child a {
+                background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+                padding: 0 15px 0 0;
+                @include breakpoint($widescreen-below){
+                    padding: 0 15px;
+                }
+            }
+            ul.main-footer-menu > li:last-child a {
+                background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+                padding: 0 0 0 15px;
+                @include breakpoint($widescreen-below){
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+    .footer-container{
+    	padding: 20px 20px 20px 20px;
+    }
+    .copyright{
+        background: url("../images/ltte/footer_two_lines.png") repeat-x scroll 0 0 rgba(0, 0, 0, 0);
+        overflow: hidden;
+        padding: 32px 0 20px;
+        font-family: $font-family-serif;
+        p{
+            color: #32291f;
+            font-size: 22px;
+            text-align: center;
+            margin: 0;
+            line-height: 1;
+        }
+    }
+} 

@@ -1,0 +1,72 @@
+.success { 
+	@extend .alert-success;
+}
+
+.error { 
+	@extend .alert-danger; 
+}
+
+.notice { 
+	@extend .alert-info;
+}
+
+.messages{
+	@extend .alert;
+	padding: 0;
+	ul{
+		list-style:none !important; 
+		margin:0 !important; 
+		padding:0 !important;
+	}
+	li{
+		list-style: none;
+		margin:0 0 0 !important;
+		li{
+			margin:0 0 3px !important;
+		}
+	}
+}
+
+.error-msg,
+.success-msg,
+.note-msg,
+.notice-msg { 
+	border-style:solid !important; 
+	border-width:1px !important; 
+	padding:20px 20px !important; 
+	font-weight:bold !important; 
+}
+.error-msg { 
+	@extend .alert-danger; 
+}
+.success-msg { 
+	@extend .alert-success;  
+}
+.note-msg,
+.notice-msg { 
+	@extend .alert-info; 
+}
+
+/* Global site notices */
+.global-site-notice { 
+	border:1px solid #cfcfcf; 
+	border-width:0 0 1px; 
+	background:#ffff90; 
+	text-align:center; 
+	color:#2f2f2f; 
+	.notice-inner{
+		width:100%; 
+		margin:0 auto; 
+		padding:20px 0 20px 80px; 
+		background:url(../images/i_notice.gif) 20px 25px no-repeat; 
+		text-align:left;
+		p{
+			margin:0; 
+			border:1px dotted #cccc73; 
+			padding:10px;
+		}
+		.actions{
+			padding-top:10px;
+		}
+	}
+}

@@ -1,0 +1,85 @@
+<div class="mobile-nav-wrap">
+    <div class="nav-icon-show"></div>
+    <div class="mobile-menu-wrap">
+        <ul class="mobile-menu">
+            <li><a href="http://www.letterstotheexiles.com/" class="">Home</a></li>
+            <li><a href="#synopsis" class="mob-nav-item">Synopsis</a></li>
+            <li><a href="#clips" class="mob-nav-item">Clips</a></li>
+            <li><a href="#cast" class="mob-nav-item">Cast</a></li>
+            <li><a href="#screenings" class="mob-nav-item">Screenings</a></li>
+            <li><a href="#blog" class="mob-nav-item">Evan’s blog</a></li>
+            <li><a href="#bonus" class="mob-nav-item">Bonus Material</a></li>
+            <li><a href="http://shop.letterstotheexiles.com/" class="">Shop</a></li>
+            <li><a href="#contact" class="mob-nav-item">Contact us</a></li>
+        </ul>
+        <a class="hide-menu" href="#">Hide</a>
+    </div><!--/.mobile-menu-wrap-->
+</div><!--/.mobile-nav-wrap-->
+
+<div class="nav-wrapper nav-wrap-top">
+    <div class="nav-bar-wrap">
+        <ul class="nav-bar">
+            <li class="logo-item">
+                <a class="logo" href="http://www.letterstotheexiles.com/">
+                    <img alt="home" src="<?php echo $this->getSkinUrl('images/ltte/newest_logo.png'); ?>">
+                </a>
+            </li>
+            <li><a href="http://www.letterstotheexiles.com/flow-page/#synopsis" class="synopsis nav-item">Synopsis</a></li>
+            <li><a href="http://www.letterstotheexiles.com/flow-page/#clips" class="clips nav-item">Clips</a></li>
+            <li><a href="http://www.letterstotheexiles.com/flow-page/#cast" class="cast nav-item">Cast</a></li>
+            <li><a href="http://www.letterstotheexiles.com/flow-page/#screenings" class="screenings nav-item">Screenings</a></li>
+            <li><a href="http://www.letterstotheexiles.com/flow-page/#blog" class="blog nav-item">Evan's blog</a></li>
+            <li><a href="http://www.letterstotheexiles.com/flow-page/#bonus" class="bonus nav-item">Bonus Material</a></li>
+            <li><a href="http://shop.letterstotheexiles.com/" class="shop">Shop</a></li>
+            <li><a href="http://www.letterstotheexiles.com/flow-page/#contact" class="contact nav-item">Contact us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+
+        <li class="second-item"><a href="#">Synopsis</a></li>
+        <li><a href="#about">Clips</a></li>
+        <li><a href="#contact">Cast</a></li>
+        <li><a href="#contact">Screenings</a></li>
+        <li><a href="#contact">Evan's Blog</a></li>
+        <li><a href="#contact">Bonus Material</a></li>
+        <li><a href="#contact">Shop</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+-->
+
+<div class="header-area">
+    <div class="container">
+        <!--<div class="row" id="header">
+            <div class="col-md-12 logo text-center">
+
+                <div class="block-title-wrap">
+                    <div class="block-title-inner">
+                        <h3><a href="http://shop.letterstotheexiles.com/">SHOP</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="row">
+            <div class="col-md-12 magento-menu-container">
+                    <?php echo $this->getChildHtml('topContainer'); ?>
+                <div class="headermagentomenu">
+
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                </div>
+            </div>
+        </div>
+
+    </div><!--/.container-->
+</div><!--/.header-area-->

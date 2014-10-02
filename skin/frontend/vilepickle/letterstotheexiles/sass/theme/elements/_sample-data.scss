@@ -1,0 +1,36 @@
+.home-callout { 
+	margin-bottom:12px; 
+	img{
+		display:block;
+	}
+}
+
+.best-selling{
+	h3{
+		margin:12px 0 6px 0; 
+		color:#e25203;
+	}
+	table{
+		border-top:1px solid #ccc;
+	}
+	tr{
+		&.odd{
+			background:#eee url(../images/best_selling_tr_odd_bg.gif) 0 100% repeat-x;
+		}
+		&.even{
+			background:#fff url(../images/best_selling_tr_even_bg.gif) 0 100% repeat-x;
+		}
+	}
+	td{
+		width:50%; 
+		border-bottom:1px solid #ccc; 
+		padding:8px 10px 8px 8px;
+	}
+	.product-img{
+		float:left; 
+		border:2px solid #dcdcdc;
+	}
+	.product-description { 
+		margin-left:107px; 
+	}
+}

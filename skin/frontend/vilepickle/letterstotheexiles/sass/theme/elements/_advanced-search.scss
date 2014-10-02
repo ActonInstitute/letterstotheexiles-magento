@@ -1,0 +1,39 @@
+.advanced-search {
+	.form-list {
+		label { 
+			width:160px; 
+			padding-right:10px; 
+		}
+		.input-box,
+		.input-range{
+			float:left; 
+			clear:none;
+		}
+	}
+}
+
+.advanced-search-amount { 
+	margin:0 0 10px; 
+}
+
+.advanced-search-summary { 
+	margin:10px 0; 
+	border:1px solid #ddd; 
+	background:#ecf9ea; 
+	padding:10px; 
+	ul{
+		float:left; 
+		width:49%;
+	}
+	strong{
+		color:#E17C24;
+	}
+	li{
+		margin:2px 0;
+	}
+	p{
+		clear:both; 
+		font-weight:bold; 
+		margin:0;
+	}
+}

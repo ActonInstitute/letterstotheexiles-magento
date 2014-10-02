@@ -1,0 +1,76 @@
+.bigbutton{
+    text-align: center;
+    a{
+        background-color: #6d2812;
+        padding: 5px 0;
+        margin: 10px 0 10px;
+        height: 100%;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        font-family: $font-family-headers;
+        @include text-shadow(1px, 1px, 0px, rgba(0,0,0,0.6));
+        border: none;
+        &:hover, &:focus{
+            color: #FFF;
+            background-color: #4f1a09;
+        }
+    }
+}
+.bigbutton_stock{
+    a{
+        cursor: default;
+        background-color: #666;
+        margin: 0;
+        &:hover{
+            background-color: #666;
+            cursor: default;
+        }
+    }
+}
+
+.bigbutton_5 a,
+.bigbutton_4 a {
+    font-size: 24px;
+    @include breakpoint($widescreen-below){
+        font-size: 20px;
+        font-weight: normal;
+    }
+    @include breakpoint($desktop-below){
+        font-size: 18px;
+    }
+    @include breakpoint($tablet-below){
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+}
+
+button{
+    &.button{
+        @extend .btn;
+        border: 0;
+        background: url("../images/ltte/link_paper_bg.png") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+        color: $brand-secondary;
+        @include border-radius(5);
+        @include box-shadow(none);
+        font-family: $font-family-monospace;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 55px;
+        padding: 0 35px;
+        letter-spacing: 0.5px;
+        @include text-shadow(1px, 1px, 0px, rgba(0,0,0,0.6));
+        margin: 10px 0;
+        &:hover, &:focus{
+            opacity: 0.8;
+            @include box-shadow(none);
+        }
+    }
+    &.disabled{
+        span{
+            color:#bbb !important;
+        }
+    }
+}

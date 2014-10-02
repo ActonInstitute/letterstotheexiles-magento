@@ -1,0 +1,26 @@
+.page-sitemap{
+	.links{
+		text-align:right; 
+		margin:0 8px -22px 0;
+		a{
+			text-decoration:none; 
+			position:relative;
+		}
+	}
+	.sitemap{
+		margin:12px;
+		a{
+			color:#444;
+		}
+		li{
+			margin:3px 0;
+			&.level-0{
+				margin:10px 0 0; 
+				font-weight:bold;
+				a{
+					color:#4f8100;
+				}
+			}
+		}
+	}
+}

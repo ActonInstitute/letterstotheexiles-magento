@@ -1,0 +1,59 @@
+.block-cart{
+	.mini-products-list{
+		.product-details{
+			.product-name,
+			.nobr {
+				white-space:normal !important;
+				small{
+					word-wrap:break-word;
+				}
+			}
+		}
+	}
+}
+
+.block-cart{
+	.block-title{
+		background:#679100;
+		strong{
+			color:#fff;
+		}
+	}
+	.summary{
+		background:#e5eed6; 
+		padding:8px; 
+		margin:-12px -10px 20px; 
+		text-align:center; 
+		position:relative; 
+		z-index:1;
+
+	}
+	ol{
+		margin-left: 0;
+		li{
+			margin-left: 0;
+			list-style: none;
+		}
+	}
+	.amount{
+		margin:0;
+		a{
+			font-weight:bold;
+		}
+	}
+	.subtotal{
+		background:url(../images/bkg_subtotal.gif) no-repeat 50% 0; margin:5px 0 0; line-height:23px;
+		.price{
+			font-weight:bold;
+		}
+	}
+	.actions{
+		display:none !important;
+		.paypal-logo{
+			float:left; 
+			width:100%; 
+			margin:3px 0 0; 
+			text-align:right;
+		}
+	}
+}

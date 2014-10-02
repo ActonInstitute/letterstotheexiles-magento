@@ -1,0 +1,47 @@
+#block-user-login, #block-block-5, #block-logintoboggan-logintoboggan_logged_in {
+    display: inline;
+    float: right;
+    @include breakpoint($tablet-below){
+        display: inline-block;
+        float: none;
+    }
+    margin: 0 15px 5px 5px;
+    a{
+        font-size: 24px;
+        @include breakpoint($desktop-below){
+            font-size: 18px;
+            margin-top: 3px;
+        }
+        color: #909090;
+        text-transform: uppercase;
+        font-family: $font-family-headers;
+        &:hover{
+            color: #333;
+        }
+        
+    }
+    .content{
+        font-size: 24px;
+        @include breakpoint($desktop-below){
+            font-size: 18px;
+            margin-top: 3px;
+        }
+        color: #909090;
+        text-transform: uppercase;
+        font-family: $font-family-headers;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}
+
+#block-user-login{
+    margin-top: 0;
+    margin-bottom: 0;
+    @include breakpoint($tablet-below){
+        margin-right: 0;
+    }
+    form{
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,33 @@
+.orders-head{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	@include breakpoint($tablet-below){
+		display: none;
+	}
+}
+.order-item{
+	margin-bottom: 20px;
+	p{
+		margin-bottom: 0;
+	}
+}
+body.shipping-tracking-popup{
+	background-image: none;
+	padding: 20px;
+}
+.title-buttons,
+.order-info{
+	margin-bottom: 20px;
+}
+.totalz{
+	.row{
+		padding: 5px 0;
+		border-bottom: 1px solid lighten($brand-secondary, 65%);
+	}
+}
+.hide-mobile{
+	@include breakpoint($tablet-below){
+		display: none;
+	}
+}

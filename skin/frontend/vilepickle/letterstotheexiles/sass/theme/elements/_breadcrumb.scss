@@ -1,0 +1,29 @@
+.breadcrumbs {
+	@include breakpoint($tablet-below){
+		display: none;
+	}
+	a { 
+		color:#777; 
+	}
+	ul{
+		margin-left: 0;
+		padding: 10px 0;
+		border-bottom: 1px solid #eaeaea;
+		font-size: 14px;
+		color: #777;
+		margin-bottom: 0px;
+	}
+	li{
+		display:inline;
+		margin-left: 0;
+		strong{
+			font-weight:bold;
+		}
+	}
+}
+
+.breadcrumb-container{
+	@include breakpoint($tablet-below){
+		display: none;
+	}
+}

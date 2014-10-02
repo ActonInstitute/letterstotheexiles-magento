@@ -1,0 +1,16 @@
+.tags-list{
+	display:block; 
+	border:1px solid #ddd; 
+	background:#f6f6f6; 
+	padding:10px;
+	li{
+		 display:inline !important; 
+		 margin:0 5px 0 0;
+		 a{
+		 	color:#1b2d3b;
+		 }
+	}
+}
+#productTagName{
+	margin-bottom: 10px;
+}
